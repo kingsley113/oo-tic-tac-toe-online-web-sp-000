@@ -105,7 +105,7 @@ class TicTacToe
   def winner
     #binding.pry
     winner = won?
-    winner = winner.pop
+    winner = winner[0]
     @board[winner]
     # binding.pry
   end
