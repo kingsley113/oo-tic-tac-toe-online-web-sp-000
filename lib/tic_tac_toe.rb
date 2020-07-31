@@ -112,3 +112,21 @@ class TicTacToe
 
 
 end
+
+
+# Play method
+def play
+  if !over? 
+    turn
+  else
+    if draw?
+      puts "Cat's game!"
+    elsif won?
+      "Congratulations player #{winner}, You win!"
+    end
+  end
+end
+  
+          
+
+
