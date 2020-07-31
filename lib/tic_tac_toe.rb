@@ -120,9 +120,8 @@ class TicTacToe
     if draw?
       puts "Cat's Game!"
     elsif won?
-      "Congratulations #{winner}!"
+      puts "Congratulations #{winner}!"
       binding.pry
-      return
     end
   end
 
