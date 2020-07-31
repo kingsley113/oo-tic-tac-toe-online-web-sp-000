@@ -116,7 +116,7 @@ class TicTacToe
     while !over?
       turn
     end
-    
+
     if over?
       turn
     else
