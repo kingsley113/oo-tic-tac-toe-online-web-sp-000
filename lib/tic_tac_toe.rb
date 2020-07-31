@@ -113,7 +113,11 @@ class TicTacToe
 
   # Play method
   def play
-    if !over?
+    while !over?
+      turn
+    end
+    
+    if over?
       turn
     else
       if draw?
