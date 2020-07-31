@@ -121,6 +121,7 @@ class TicTacToe
       puts "Cat's Game!"
     elsif won?
       "Congratulations #{winner}!"
+      binding.pry
       return
     end
   end
