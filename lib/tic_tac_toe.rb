@@ -76,18 +76,27 @@ class TicTacToe
 
 
   def won?
+  # 
+  #   WIN_COMBINATIONS.find do |combo|
+  #     # binding.pry
+  #     win = []
+  #     if combo.each {|x| win << @board[x]}
+  #       win.all?("X" || "O")
+  #     else
+  #       false
+  #     end
+  #   end
+  # end
 
     WIN_COMBINATIONS.find do |combo|
-      # binding.pry
-      win = []
-      if combo.each {|x| win << @board[x]}
-        win.all?("X" || "O")
+      winners = @board[combo]
+      if winners.all?("X" || "O")
+        combo
       else
         false
       end
     end
   end
-
 
   def full?
     !@board.any?(" ")
