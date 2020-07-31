@@ -76,7 +76,7 @@ class TicTacToe
 
 
   def won?
-  # 
+  #
   #   WIN_COMBINATIONS.find do |combo|
   #     # binding.pry
   #     win = []
