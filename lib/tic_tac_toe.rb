@@ -89,7 +89,7 @@ class TicTacToe
   # end
 
     WIN_COMBINATIONS.find do |combo|
-      winners = [] 
+      winners = []
       combo.each {|z| winners << @board[z]}
       binding.pry
       if winners.all?("X" || "O")
