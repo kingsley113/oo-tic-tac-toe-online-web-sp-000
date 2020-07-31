@@ -65,7 +65,6 @@ class TicTacToe
     puts "Please enter move between 1 & 9:"
     input = gets.to_i
     index = input_to_index(input)
-    # binding.pry
     if valid_move?(index)
       move(index, current_player)
       display_board
