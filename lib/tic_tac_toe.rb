@@ -116,7 +116,7 @@ class TicTacToe
     while !over?
       turn
     end
-    
+
     if draw?
       puts "Cat's game!"
     elsif won?
