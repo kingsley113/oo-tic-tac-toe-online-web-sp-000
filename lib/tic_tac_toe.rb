@@ -89,7 +89,7 @@ class TicTacToe
   # end
 
     WIN_COMBINATIONS.find do |combo|
-      winners = @board[combo]
+      winners = @board.select.with_index(combo)
       if winners.all?("X" || "O")
         combo
       else
