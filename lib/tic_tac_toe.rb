@@ -107,7 +107,7 @@ class TicTacToe
     winner = won?
     winner
     binding.pry
-    
+
     @board[winner]
     # binding.pry
   end
