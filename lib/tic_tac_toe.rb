@@ -116,7 +116,7 @@ end
 
 # Play method
 def play
-  if !over? 
+  if !over?
     turn
   else
     if draw?
@@ -126,7 +126,3 @@ def play
     end
   end
 end
-  
-          
-
-
